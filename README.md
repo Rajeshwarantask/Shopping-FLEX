@@ -1,5 +1,6 @@
 # Shopping-FLEX
 FLEX shopping website
+![Screenshot (9)](https://github.com/user-attachments/assets/11b52fc6-a780-47c5-a054-e50726f26bdd)
 
 ### Project Overview
 This project aims to create a dynamic front-end shopping website using HTML, CSS, and JavaScript. The website features a user-friendly interface that allows users to browse products, add items to their cart, and view their orders seamlessly.
