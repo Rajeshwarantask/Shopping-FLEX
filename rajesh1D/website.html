@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
     <title>glassy</title>
 </head>
 <body>
     <header>
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">BUY</a></li>
-            <li><a href="#">CART</a></li>
+            <li><a href="#1">HOME</a></li>
+            <li><a href="#1">BUY</a></li>
+            <li><a href="#1">CART</a></li>
         </ul>
-        <a href="#" class="logo">FLEX</a>
+        <a href="#1" class="logo">FLEX</a>
         <ul>
-            <li><a href="#">ORDER</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#1">ORDER</a></li>
+            <li><a href="#1">ABOUT</a></li>
+            <li><a href="#1">CONTACT</a></li>
         </ul>
     </header>
     
@@ -28,10 +29,10 @@
           
         <div class="box">
             <div class="image">
-                <img src="perfume.png" class="img">
-                <img src="dress.png" class="img1">
-                <img src="mens.png" class="img2">
-                <img src="shoes.png" class="img3">
+                <img src="images/perfume.png" class="img">
+                <img src="images/dress.png" class="img1">
+                <img src="images/mens.png" class="img2">
+                <img src="images/shoes1.png" class="img3">
             </div>
             <section>
                 <h1 class="product">perfume</h1>
@@ -42,100 +43,63 @@
             
             <div class="c">
                 <ul class="perfume">
-                    <li><a href="Fogg">fogg</a></li>
-                    <li><a href="axe">axe</a></li>
-                    <li><a href="denver">denver</a></li>
-                    <li><a href="brutee">brutee</a></li>
+                    <li>fogg</li>
+                    <li>axe</li>
+                    <li>denver</li>
+                    <li>brutee</li>
                 </ul>
                 <ul class="womens">
-                    <li><a href="#">saree</a></li>
-                    <li><a href="#">baloon dress</a></li>
-                    <li><a href="#">kurtas</a></li>
-                    <li><a href="#">jeans</a></li>
+                    <li>Tutu</li>
+                    <li>MIDI</li>
+                    <li>MAXI</li>
+                    <li>Asymmetric</li>
                 </ul>
                 <ul class="mens">
-                    <li><a href="#">shirt</a></li>
-                    <li><a href="#">jeans</a></li>
-                    <li><a href="#">t-shirt</a></li>
-                    <li><a href="#">shorts</a></li>
+                    <li>shirt</li>
+                    <li>jeans</li>
+                    <li>t-shirt</li>
+                    <li>Hoodie</li>
                 </ul>
                 <ul class="shoes">
-                    <li><a href="#">sneakers</a></li>
-                    <li><a href="#">sports</a></li>
-                    <li><a href="#">formal</a></li>
-                    <li><a href="#">informal</a></li>
+                    <li>sneakers</li>
+                    <li>sports</li>
+                    <li>formal</li>
+                    <li>informal</li>
                 </ul>
             </div>
             <div class="cc">
-                <ul><li><a href="#">MORE</a></li></ul>
-                <ul class="wmore"><li><a href="#">MORE</a></li></ul>
-                <ul class="mmore"><li><a href="#">MORE</a></li></ul>
-                <ul class="smore"><li><a href="#">MORE</a></li></ul>
+                <ul><li><button onclick="showSection('perfumes')"class="visit">VISIT</button></li></ul>
+                <ul class="wmore"><li><button onclick="showSection('womens')"class="visit">VISIT</button></li></ul>
+                <ul class="mmore"><li><button onclick="showSection('mens')"class="visit">VISIT</button></li></ul>
+                <ul class="smore"><li><button onclick="showSection('shoes')"class="visit">VISIT</button>
+                  </li></ul>
             </div>
         </div>
     </div>
     <div class="container1">
-      <div class="card-container">
-        <div class="card">
-          <div class="brand-image3"></div>
-          <div class="description">
-            <h1 id="brandName1">NIKE</h1>
-            <p>SPECIAL EDITION</p>
-          </div>
-          <div class="price">
-            <div class="price1">
-              <h1 id="amount1">300</h1><h1>$</h1>
-            </div>
-            <button onclick="addToCart(1, 'NIKE', 300)">add to cart</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="brand-image3"></div>
-          <div class="description">
-            <h1 id="brandName2">PUMA</h1>
-            <p>SPECIAL EDITION</p>
-          </div>
-          <div class="price">
-            <div class="price1">
-              <h1 id="amount2">250</h1><h1>$</h1>
-            </div>
-            <button onclick="addToCart(2, 'PUMA', 250)">add to cart</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="brand-image3"></div>
-          <div class="description">
-            <h1 id="brandName3">BATA</h1>
-            <p>SPECIAL EDITION</p>
-          </div>
-          <div class="price">
-            <div class="price1">
-              <h1 id="amount3">150</h1><h1>$</h1>
-            </div>
-            <button onclick="addToCart(3, 'BATA', 150)">add to cart</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="brand-image3"></div>
-          <div class="description">
-            <h1 id="brandName4">ADDIDAS</h1>
-            <p>SPECIAL EDITION</p>
-          </div>
-          <div class="price">
-            <div class="price1">
-              <h1 id="amount4">200</h1><h1>$</h1>
-            </div>
-            <button onclick="addToCart(4, 'ADDIDAS', 200)">add to cart</button>
-          </div>
-        </div>
+      <div id="shoesSection">
+        <div class="card-container" id="shoesContainer"></div>
       </div>
+      <div id="perfumesSection" style="display: none;">
+      <div class="card-container" id="perfumesContainer"></div>
+      </div>
+      <div id="womensSection" style="display: none;">
+        <div class="card-container" id="womensContainer"></div>
+        </div>
+        <div id="mensSection" style="display: none;">
+          <div class="card-container" id="mensContainer"></div>
+          </div>
     </div>
+  
+  
+  <!-- Buttons to switch between sections -->
+  
       <div class="container1">
         <div class="smorp">
-          <img src="smorp.png" height="800px" width="800px">
+          <img src="images/smorp.png" height="800px" width="800px">
         </div>
         <div class="smorp1">
-          <img src="smorp.png" height="800px" width="800px">
+          <img src="images/smorp.png" height="800px" width="800px">
         </div>
         <div class="card">
           <div class="orders">
@@ -155,101 +119,5 @@
           </div>
         </div>
       </div>
-      
-      <script>
-        var cartItems = []; // Array to store cart items
-        var totalPrice = 0;
-    
-        // Function to add item to cart
-        function addToCart(productId, productName, productPrice) {
-          // Check if the product is already in cart
-          var existingItem = cartItems.find(item => item.productId === productId);
-    
-          if (existingItem) {
-            // If item already exists, increment quantity
-            existingItem.quantity++;
-          } else {
-            // If item doesn't exist, add it to the cart
-            cartItems.push({ productId: productId, productName: productName, price: productPrice, quantity: 1 });
-          }
-    
-          // Update the display in the final billing section
-          updateFinalBilling();
-        }
-    
-        // Function to update final billing section
-        function updateFinalBilling() {
-          var orderList = document.getElementById("orderList");
-          orderList.innerHTML = ''; // Clear previous items
-    
-          totalPrice = 0;
-    
-          // Iterate through cartItems to update the display
-          cartItems.forEach(item => {
-            var listItem = document.createElement("li");
-            listItem.classList.add("order-item"); // Add a class for styling
-    
-            // Create divs for brand name and price
-            var brandDiv = document.createElement("div");
-            brandDiv.classList.add("product-brand");
-            brandDiv.textContent = item.productName;
-    
-            var priceDiv = document.createElement("div");
-            priceDiv.classList.add("product-price");
-            priceDiv.textContent = `$${(item.price * item.quantity).toFixed(2)}`;
-    
-            // Create a div to contain the item details (for styling purposes)
-            var itemDetails = document.createElement("div");
-    
-            // Create buttons for incrementing and decrementing quantity
-            var quantityControls = `
-              <button onclick="decrementQuantity(${item.productId})" class="inc">-</button>
-              <span>${item.quantity}</span>
-              <button onclick="incrementQuantity(${item.productId})" class="dec"> + </button>
-            `;
-    
-            // Set the content of the item div
-            listItem.innerHTML = `${item.productName} ${quantityControls} - $${item.price * item.quantity}`;
-            orderList.appendChild(listItem);
-    
-            totalPrice += item.price * item.quantity;
-          });
-    
-          // Update total price display
-          var finalTotal = document.getElementById("finalTotal");
-          finalTotal.textContent = `TOTAL: $${totalPrice.toFixed(2)}`;
-        }
-    
-        // Function to increment quantity
-        function incrementQuantity(productId) {
-          var item = cartItems.find(item => item.productId === productId);
-          if (item) {
-            item.quantity++;
-            updateFinalBilling();
-          }
-        }
-    
-        // Function to decrement quantity
-        function decrementQuantity(productId) {
-          var item = cartItems.find(item => item.productId === productId);
-          if (item && item.quantity > 1) {
-            item.quantity--;
-            updateFinalBilling();
-          }
-        }
-    
-        // Function to clear the cart
-        function clearCart() {
-          cartItems = [];
-          updateFinalBilling();
-        }
-    
-        // Function to handle final purchase
-        function buy() {
-          // Implement logic to finalize the purchase (if needed)
-        }
-    
-      </script>
-      
 </body>
 </html>
